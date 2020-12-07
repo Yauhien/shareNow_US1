@@ -1,6 +1,6 @@
 # shareNow_US1
 
-##Framework stack
+## Framework stack
 
 * Java 11
 * Selenium WebDriver/Selenide framework
@@ -10,14 +10,14 @@
 * Spring (Application and IoC framework)
 * Log4j (Logging tool)
 
-##Prerequisites
+## Prerequisites
 
 You need to have following installed and env variables configured:
 
 * Java 11
 * Apache Maven 3
 
-##Test configurations
+## Test configurations
 
 Framework host properties can be found in application.properties. Please set browser.type variable to run tests in particular browser(in uppercase). CHROME is set by default. 
 
@@ -52,6 +52,6 @@ setup a junit configuration and run with IDE
 ```
 
 
-##Results
+## Results
 
 Test results report can be found here "target/cucumber-pretty/index.html" or in the console.
