@@ -1,5 +1,7 @@
 # shareNow_US1
 
+The solution with desktop registration tests
+
 ## Framework stack
 
 * Java 11
