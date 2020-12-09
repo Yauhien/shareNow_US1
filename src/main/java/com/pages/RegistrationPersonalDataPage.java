@@ -11,8 +11,6 @@ import com.codeborne.selenide.SelenideElement;
 import com.enums.ApplicationPages;
 import com.github.javafaker.Faker;
 import java.util.Locale;
-import java.util.Random;
-
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.springframework.stereotype.Component;
@@ -20,7 +18,6 @@ import org.springframework.stereotype.Component;
 @Component
 public class RegistrationPersonalDataPage extends Page {
 
-    Random random = new Random();
     Faker deFaker = new Faker(new Locale("de-GB"));
 
     private static String inputField = "input[name='%s']";
@@ -46,12 +43,6 @@ public class RegistrationPersonalDataPage extends Page {
         String pin = String.valueOf(deFaker.random().nextInt(1000, 9999));
         $(String.format(inputField, "pin")).sendKeys(pin);
         checkValueInField("Magic PIN", pin);
-    }
-
-    public String getRandomNumberUsingInts(int min, int max) {
-        return String.valueOf(random.ints(min, max)
-                .findFirst()
-                .getAsInt());
     }
 
     private void checkValueInField(String field, String expectedValue) {

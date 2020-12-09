@@ -8,10 +8,8 @@ import org.springframework.beans.factory.annotation.Value;
 public class Step {
     @Value("${application.url}")
     protected String url;
-
     @Autowired
     protected Browser browser;
-
     @Autowired
     protected TestContext testContext;
 }
