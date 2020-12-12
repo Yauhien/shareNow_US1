@@ -41,6 +41,7 @@ Go to scr/test/java/runners/RunCucumberAllTests and hit rum on the class
 From terminal with maven command
 
 to run all the tests for the regression
+mvn clean verify
 mvn clean test -Dcucumber.options="--tags @all"
 
 to run a separate test, please mark the scenario with @wip annotation
